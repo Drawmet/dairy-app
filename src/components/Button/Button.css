@@ -1,0 +1,36 @@
+.btn {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 16pt;
+  padding: 7px 20px;
+}
+
+.btn-success {
+  background: rgb(39, 204, 192);
+  color: rgb(255, 255, 255);
+}
+
+.btn-danger {
+  background: rgb(255, 49, 89);
+  color: rgb(255, 255, 255);
+}
+
+.btn-success.outline {
+  color: rgb(39, 204, 192);
+  border-color: rgb(39, 204, 192);
+  background: transparent;
+}
+
+.btn-danger.outline {
+  color: rgb(255, 49, 89);
+  border-color: rgb(255, 49, 89);
+  background: transparent;
+}
+
+.btn-success.outline:hover {
+  background: #999999;
+}
+
+.btn-danger.outline:hover {
+  background: #999999;
+}

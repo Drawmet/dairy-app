@@ -1,0 +1,20 @@
+.sidebar-container {
+  background: rgb(43, 47, 62);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  text-align: left;
+}
+
+.sidebar-title {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.sidebar-subtitle {
+  color: rgb(128, 128, 128);
+}
