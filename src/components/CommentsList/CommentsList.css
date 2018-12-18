@@ -1,0 +1,15 @@
+.comment-container {
+  text-align: left;
+}
+
+.list-item.new-comment-container {
+  border: none;
+}
+
+.list-item.new-comment-container .input-container {
+  width: 100%;
+}
+
+.list-item.new-comment-container .input-container input {
+  height: 50px;
+}

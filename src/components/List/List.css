@@ -1,3 +1,48 @@
 .list {
-  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  border: 1px solid rgb(242, 242, 242);
+  box-shadow: 1px 1px 1px 1px rgb(242, 242, 242);
+  margin: 10px;
+  width: 350px;
+}
+
+.list-title {
+  align-self: flex-start;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.list-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #000;
+  width: 100%;
+}
+
+.list-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.list-item .list-indicator.active {
+  display: block;
+  position: absolute;
+  left: -20px;
+  margin: 3px 0;
+  width: 5px;
+  height: 80%;
+  background: rgb(255, 49, 89);
+}
+
+.list-item .list-indicator {
+  display: none;
 }

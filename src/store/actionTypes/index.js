@@ -1,0 +1,13 @@
+export const INITIALIZE_APP = "INITIALIZE_APP";
+
+export const UPDATE_COMMENTS_BY_ID = "UPDATE_COMMENTS_BY_ID";
+
+export const UPDATE_ACTIVE = "UPDATE_ACTIVE";
+
+export const DELETE_ITEM = "DELETE_ITEM";
+
+export const CREATE_ITEM = "CREATE_ITEM";
+
+export const CREATE_COMMENT = "CREATE_COMMENT";
+
+export const UPDATE_NAME_INPUT = "UPDATE_NAME_INPUT";

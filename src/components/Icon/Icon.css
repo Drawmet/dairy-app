@@ -1,0 +1,18 @@
+.icon {
+  min-width: 50px;
+  min-height: 50px;
+  margin-right: 15px;
+  align-self: flex-start;
+}
+
+.icon.blue {
+  background: rgb(71, 86, 140);
+}
+
+.icon.orange {
+  background: rgb(255, 138, 0);
+}
+
+.icon.grey {
+  background: rgb(230, 230, 230);
+}

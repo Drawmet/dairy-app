@@ -1,8 +1,8 @@
 .btn {
   border: 1px solid transparent;
   border-radius: 5px;
-  font-size: 16pt;
-  padding: 7px 20px;
+  padding: 7px 10px;
+  margin: 0 10px;
 }
 
 .btn-success {
@@ -28,9 +28,9 @@
 }
 
 .btn-success.outline:hover {
-  background: #999999;
+  background: #dddddd;
 }
 
 .btn-danger.outline:hover {
-  background: #999999;
+  background: #dddddd;
 }

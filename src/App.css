@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
 
 .primary-color {
@@ -17,4 +18,18 @@
 
 .danger-background {
   background: #ff2f5a;
+}
+
+.header-items-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-input {
+  flex: 3;
+}
+
+.header-button {
+  flex: 1;
 }

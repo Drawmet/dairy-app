@@ -3,11 +3,15 @@ import PropTypes from "prop-types";
 
 import Title from "../Title";
 
+import "./List.css";
+
 const List = ({ title, header, children, className }) => (
-  <div className={`list ${className || ""}`}>
-    <Title className="list-title">{title}</Title>
-    {header}
-    <div className="list-item-container">{children}</div>
+  <div className="list-container">
+    <div className={`list ${className || ""}`}>
+      <Title className="list-title">{title}</Title>
+      {header && header}
+      <div className="list-item-container">{children}</div>
+    </div>
   </div>
 );
 

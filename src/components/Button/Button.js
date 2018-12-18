@@ -4,11 +4,9 @@ import PropTypes from "prop-types";
 import "./Button.css";
 
 const Button = ({ className, label, onClick }) => (
-  <div>
-    <button className={`btn ${className || ""}`} onClick={onClick}>
-      {label}
-    </button>
-  </div>
+  <button className={`btn ${className || ""}`} onClick={onClick}>
+    {label}
+  </button>
 );
 
 Button.propTypes = {
