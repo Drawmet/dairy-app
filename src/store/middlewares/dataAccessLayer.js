@@ -45,7 +45,7 @@ const dataAccessLayer = store => next => action => {
       return next({
         ...action,
         payload: {
-          id: store.getState().menu.data.length
+          id: store.getState().menu.data.length + 1
         }
       });
     default:
