@@ -38,7 +38,7 @@ const dataAccessLayer = store => next => action => {
         ...action,
         payload: {
           ...action.payload,
-          itemId: store.menu.active
+          itemId: store.getState().menu.active
         }
       });
     case actionTypes.CREATE_ITEM:

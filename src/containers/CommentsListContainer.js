@@ -2,17 +2,30 @@ import { connect } from "react-redux";
 
 import CommentsList from "../components/CommentsList";
 
-import { getCommentsById, getActive } from "../selectors";
+import {
+  getActive,
+  getCommentsById,
+  getCommentValue,
+  getColorComment
+} from "../selectors";
 
-import { updateCommentsById } from "../store/actions";
+import {
+  changeColorComment,
+  changeComment,
+  createComment
+} from "../store/actions";
 
 const mapStateToProps = state => ({
   active: getActive(state),
-  comments: getActive(state) ? getCommentsById(state, getActive(state)) : []
+  comments: getActive(state) ? getCommentsById(state, getActive(state)) : [],
+  value: getCommentValue(state),
+  color: getColorComment(state)
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateCommentsById: id => dispatch(updateCommentsById(id))
+  changeComment: value => dispatch(changeComment(value)),
+  changeColorComment: color => dispatch(changeColorComment(color)),
+  createComment: () => dispatch(createComment())
 });
 
 export default connect(

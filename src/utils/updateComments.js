@@ -1,4 +1,8 @@
 const updateComments = (state, comments) => {
+  if (!comments) {
+    return [...state.data, { itemId: state.data.length + 1, value: [] }];
+  }
+
   const commentsIsFind = state.data.find(
     item => item.itemId === comments.itemId
   );

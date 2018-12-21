@@ -1,33 +1,88 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { HotKeys } from "react-hotkeys";
+import { compose, withState, withHandlers } from "recompose";
 
+import constants from "../../constants";
+
+import ColorSelect from "../ColorSelect";
 import Icon from "../Icon";
 import Input from "../Input";
 import List from "../List";
 
 import "./CommentsList.css";
 
-const CommentsList = ({ active, comments }) =>
+const keyMap = {
+  [constants.handlers.NEW_COMMENT]: "ctrl+enter"
+};
+
+const handlers = createComment => ({
+  [constants.handlers.NEW_COMMENT]: () => createComment()
+});
+
+const handlersComponent = {
+  handleOnChangeColor: ({ open, changeColorComment, changeOpen }) => color => {
+    changeColorComment(color);
+
+    changeOpen(!open);
+  },
+  handleOnClick: ({ open, changeOpen }) => event => {
+    event.stopPropagation();
+
+    changeOpen(!open);
+  }
+};
+
+const CommentsList = ({
+  active,
+  color,
+  comments,
+  open,
+  value,
+  changeComment,
+  createComment,
+  handleOnClick,
+  handleOnChangeColor
+}) =>
   active && (
     <List title={`Comments #${active ? active : ""}`}>
       {comments &&
-        comments.value &&
-        comments.value.map(item => (
+        comments.map(item => (
           <List.Item className="comment-container" key={item.id}>
-            <Icon color={item.avatar} />
-            {item.text}
+            <Icon color={item.color} />
+            {item.value}
           </List.Item>
         ))}
-      <List.Item className="new-comment-container">
-        <Icon color="grey" />
-        <Input textarea onChange={event => console.log(event.target.value)} />
-      </List.Item>
+      <HotKeys keyMap={keyMap} handlers={handlers(createComment)}>
+        <List.Item className="new-comment-container">
+          <Icon color={color} onClick={handleOnClick}>
+            <ColorSelect open={open} onChange={handleOnChangeColor} />
+          </Icon>
+          <Input
+            textarea
+            value={value}
+            onChange={event => changeComment(event.target.value)}
+          />
+        </List.Item>
+      </HotKeys>
     </List>
   );
 
 CommentsList.propTypes = {
   active: PropTypes.number,
-  comments: PropTypes.array
+  color: PropTypes.value,
+  comments: PropTypes.array,
+  value: PropTypes.string,
+  open: PropTypes.bool,
+  changeComment: PropTypes.func,
+  changeColorComment: PropTypes.func,
+  createComment: PropTypes.func,
+  changeOpen: PropTypes.func,
+  handleOnClick: PropTypes.func,
+  handleOnChangeColor: PropTypes.func
 };
 
-export default CommentsList;
+export default compose(
+  withState("open", "changeOpen", false),
+  withHandlers(handlersComponent)
+)(CommentsList);

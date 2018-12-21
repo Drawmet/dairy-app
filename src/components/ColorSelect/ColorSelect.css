@@ -1,0 +1,32 @@
+.color-select-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: -50px;
+}
+
+.color-select-container .color-select-item {
+  width: 50px;
+  height: 10px;
+}
+
+.color-select-item.red {
+  background: rgb(255, 49, 89);
+}
+
+.color-select-item.green {
+  background: rgb(39, 204, 192);
+}
+
+.color-select-item.blue {
+  background: rgb(71, 86, 140);
+}
+
+.color-select-item.orange {
+  background: rgb(255, 138, 0);
+}
+
+.color-select-item.grey {
+  background: rgb(230, 230, 230);
+}

@@ -1,8 +1,17 @@
 .icon {
+  position: relative;
   min-width: 50px;
   min-height: 50px;
   margin-right: 15px;
   align-self: flex-start;
+}
+
+.icon.red {
+  background: rgb(255, 49, 89);
+}
+
+.icon.green {
+  background: rgb(39, 204, 192);
 }
 
 .icon.blue {

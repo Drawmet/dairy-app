@@ -1,10 +1,25 @@
 import { createStore, compose } from "redux";
+import { persistStore, persistReducer } from "redux-persist";
 
-import { initializeApp } from "./actions";
+// import { initializeApp } from "./actions"; // Initialize data for test;
 import middlewares from "./middlewares";
 import reducers from "./reducers";
 
-const store = createStore(reducers, undefined, compose(middlewares));
-store.dispatch(initializeApp());
+import storage from "redux-persist/lib/storage"; // defaults to localStorage for web and AsyncStorage for react-native
 
-export default store;
+const persistConfig = {
+  key: "root",
+  storage
+};
+
+const persistedReducer = persistReducer(persistConfig, reducers);
+
+const store = createStore(persistedReducer, undefined, compose(middlewares));
+
+// store.dispatch(initializeApp()); // Initialize data for test;
+const persistor = persistStore(store);
+
+export default {
+  store,
+  persistor
+};
