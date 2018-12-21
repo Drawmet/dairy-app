@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/dairy-app/precache-manifest.ae935cc754cd28a1e2953dddde9fd66d.js"
+  "/dairy-app/precache-manifest.de2226507811830287037f9cf93c02b0.js"
 );
 
 workbox.clientsClaim();

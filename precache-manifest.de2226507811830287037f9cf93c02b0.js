@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d794b68fba96e68b19b5",
+    "revision": "0a96b1fc15917d22fcc1",
     "url": "/dairy-app/static/css/main.4c437d70.chunk.css"
   },
   {
-    "revision": "d794b68fba96e68b19b5",
-    "url": "/dairy-app/static/js/main.d794b68f.chunk.js"
+    "revision": "0a96b1fc15917d22fcc1",
+    "url": "/dairy-app/static/js/main.0a96b1fc.chunk.js"
   },
   {
     "revision": "708612da96465079f461",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/dairy-app/static/js/runtime~main.ac2aeb3d.js"
   },
   {
-    "revision": "c759a666e831075fb19a935a8873b4ff",
+    "revision": "e10289eb1dcbca29322a23931de07e4d",
     "url": "/dairy-app/index.html"
   }
 ];
