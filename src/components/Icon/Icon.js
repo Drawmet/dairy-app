@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 
 import "./Icon.css";
 
-const Icon = ({ color, children, onClick }) => (
+const Icon = ({ label, color, children, onClick }) => (
   <span className={`icon ${color}`} onClick={onClick}>
+    {label ? label : ""}
     {children}
   </span>
 );
@@ -12,7 +13,8 @@ const Icon = ({ color, children, onClick }) => (
 Icon.propTypes = {
   color: PropTypes.string,
   children: PropTypes.element,
-  onCLick: PropTypes.func
+  label: PropTypes.string,
+  onClick: PropTypes.func
 };
 
 export default Icon;

@@ -55,7 +55,7 @@ const CommentsList = ({
         ))}
       <HotKeys keyMap={keyMap} handlers={handlers(createComment)}>
         <List.Item className="new-comment-container">
-          <Icon color={color} onClick={handleOnClick}>
+          <Icon color={color} label="click on me!" onClick={handleOnClick}>
             <ColorSelect open={open} onChange={handleOnChangeColor} />
           </Icon>
           <Input
