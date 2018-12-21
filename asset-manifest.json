@@ -1,13 +1,15 @@
 {
-  "main.css": "/dairy-app/static/css/main.f879aa07.chunk.css",
-  "main.js": "/dairy-app/static/js/main.0455d06e.chunk.js",
-  "main.js.map": "/dairy-app/static/js/main.0455d06e.chunk.js.map",
-  "static/js/1.25501748.chunk.js": "/dairy-app/static/js/1.25501748.chunk.js",
-  "static/js/1.25501748.chunk.js.map": "/dairy-app/static/js/1.25501748.chunk.js.map",
+  "main.css": "/dairy-app/static/css/main.4c437d70.chunk.css",
+  "main.js": "/dairy-app/static/js/main.d794b68f.chunk.js",
+  "main.js.map": "/dairy-app/static/js/main.d794b68f.chunk.js.map",
+  "static/css/1.2c34bac7.chunk.css": "/dairy-app/static/css/1.2c34bac7.chunk.css",
+  "static/js/1.708612da.chunk.js": "/dairy-app/static/js/1.708612da.chunk.js",
+  "static/js/1.708612da.chunk.js.map": "/dairy-app/static/js/1.708612da.chunk.js.map",
   "runtime~main.js": "/dairy-app/static/js/runtime~main.ac2aeb3d.js",
   "runtime~main.js.map": "/dairy-app/static/js/runtime~main.ac2aeb3d.js.map",
-  "static/css/main.f879aa07.chunk.css.map": "/dairy-app/static/css/main.f879aa07.chunk.css.map",
+  "static/css/main.4c437d70.chunk.css.map": "/dairy-app/static/css/main.4c437d70.chunk.css.map",
+  "static/css/1.2c34bac7.chunk.css.map": "/dairy-app/static/css/1.2c34bac7.chunk.css.map",
   "index.html": "/dairy-app/index.html",
-  "precache-manifest.e7053e78bf34a8907c238359cbdb8096.js": "/dairy-app/precache-manifest.e7053e78bf34a8907c238359cbdb8096.js",
+  "precache-manifest.ae935cc754cd28a1e2953dddde9fd66d.js": "/dairy-app/precache-manifest.ae935cc754cd28a1e2953dddde9fd66d.js",
   "service-worker.js": "/dairy-app/service-worker.js"
 }
